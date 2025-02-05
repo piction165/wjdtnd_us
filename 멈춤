@@ -498,7 +498,7 @@ footer ul {
 
 /* ✅ 마우스를 올리면 확대 효과 */
 .ppt-item:hover img {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 /* ✅ 카드뉴스 컨테이너 위치 조정 */
