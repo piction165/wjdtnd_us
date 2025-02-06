@@ -259,9 +259,33 @@ Header Style
 
 .header-area .main-nav {
   display: flex;
-  align-items: center; /* 로고와 메뉴를 동일한 높이로 정렬 */
+  align-items: center;
   justify-content: space-between;
-  height: 70px; /* 헤더 높이 조정 */
+  height: 70px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-area .main-nav {
+    flex-direction: column; /* 모바일에서는 메뉴가 세로 정렬 */
+    align-items: flex-start; /* 로고와 메뉴 정렬 */
+    height: auto; /* 높이를 자동 조정 */
+  }
+
+  .header-area .nav {
+    display: none; /* 기본적으로 메뉴 숨김 */
+    width: 100%; /* 메뉴 전체 너비 사용 */
+  }
+
+  .header-area .nav.active {
+    display: flex; /* 햄버거 버튼 클릭 시 메뉴 표시 */
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block; /* 햄버거 메뉴 버튼 표시 */
+    cursor: pointer;
+  }
 }
 
 .header-area .main-nav .logo {
@@ -273,7 +297,7 @@ Header Style
   transition: all 0.3s ease 0s;
 }
 
-.header-area .main-nav .logo img {
+ {
   max-width: 142px;
 }
 
