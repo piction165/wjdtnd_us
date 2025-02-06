@@ -258,9 +258,10 @@ Header Style
 }
 
 .header-area .main-nav {
-  min-height: 80px;
-  background: transparent;
-  display: flex
+  display: flex;
+  align-items: center; /* 로고와 메뉴를 동일한 높이로 정렬 */
+  justify-content: space-between;
+  height: 70px; /* 헤더 높이 조정 */
 }
 
 .header-area .main-nav .logo {
