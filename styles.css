@@ -666,48 +666,22 @@ footer ul {
 
 /* ✅ 아이폰 15 프로 (430px 이하)에서만 적용 */
 @media (max-width: 430px) {
-    /* ✅ 헤더 내부 요소 정렬 */
-    .header-area .main-nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 15px;
-        height: 60px;
-    }
-
-    /* ✅ 로고 크기 축소 */
+    /* ✅ 로고 크기 강제 조정 */
     .header-area .main-nav .logo img {
-        width: 120px; /* 기존보다 줄임 */
-        height: auto;
+        width: 120px !important; /* 크기 줄이기 */
+        height: auto !important;
     }
 
-    /* ✅ Contact 버튼 스타일 수정 */
-    .header-area .main-nav .border-button {
-        margin-left: auto;
-        padding: 4px 8px;
-    }
-
-    .header-area .main-nav .border-button a {
-        font-size: 12px;
-        padding: 6px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* ✅ 로고와 Contact 버튼 간격 조정 */
-    .header-area .main-nav .logo {
-        flex: 0 0 auto;
-    }
-
-    .header-area .main-nav .border-button {
-        flex: 0 0 auto;
-    }
-
-    /* ✅ Contact 버튼과 로고를 같은 높이로 정렬 */
+    /* ✅ Contact 버튼 정렬 */
     .border-button {
         display: flex;
         align-items: center;
+        margin-left: auto;
+    }
+
+    .border-button a {
+        font-size: 12px;
+        padding: 5px 10px;
     }
 
     /* ✅ 햄버거 메뉴 위치 조정 */
