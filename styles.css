@@ -81,6 +81,45 @@
         }
     }
 }
+/* ✅ 모바일 화면 (아이폰 15 프로 이하)에서 스타일 수정 */
+@media (max-width: 430px) {
+    /* ✅ 카드 레이아웃 조정 */
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2열 구조 유지 */
+        gap: 15px; /* 카드 간격 추가 */
+        padding: 10px; /* 좌우 여백 추가 */
+    }
+
+    /* ✅ 개별 카드 스타일 */
+    .portfolio-item {
+        background: #fff;
+        border-radius: 10px; /* 모서리 둥글게 */
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    }
+
+    /* ✅ 카드 이미지 크기 조정 */
+    .portfolio-item img {
+        width: 100%; /* 부모 요소에 맞게 자동 조정 */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* ✅ 텍스트 정렬 개선 */
+    .portfolio-item h4 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .portfolio-item p {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.4;
+    }
+}
+
 
 .portfolio-container img {
     max-width: 100%;
