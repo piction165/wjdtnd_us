@@ -85,10 +85,22 @@
 @media (max-width: 430px) {
     /* ✅ 카드 레이아웃 조정 */
     .portfolio-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* 2열 구조 유지 */
-        gap: 15px; /* 카드 간격 추가 */
-        padding: 10px; /* 좌우 여백 추가 */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px; /* 네비게이션 바 높이 */
+        padding: 10px 15px;
+    }
+        /* ✅ 로고 크기 조정 및 중앙 정렬 */
+    .header-area .main-nav .logo {
+        flex: 1;
+        display: flex;
+        justify-content: center; /* 중앙 정렬 */
+        align-items: center;
+    }
+        .header-area .main-nav .logo img {
+        width: 120px; /* 크기 조정 */
+        height: auto;
     }
 
     /* ✅ 개별 카드 스타일 */
