@@ -571,6 +571,7 @@ Header Style
   color: #fff;
 }
 
+
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 10px;
@@ -579,6 +580,20 @@ Header Style
   .header-area .main-nav:before {
     display: none;
   }
+}
+
+@media (max-width: 1024px) {
+    .header-area .main-nav .logo img {
+        width: 140px !important; /* 로고 크기 줄이기 */
+        height: auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-area .main-nav .logo img {
+        width: 120px !important; /* 더 작은 화면에서 크기 조정 */
+        height: auto !important;
+    }
 }
 
 @media (max-width: 767px) {
