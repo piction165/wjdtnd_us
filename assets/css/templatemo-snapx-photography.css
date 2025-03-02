@@ -322,6 +322,10 @@ Header Style
 
 .nav {
   justify-content: center;
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  align-items: flex-start;
+  width: 100%;
 }
 
 .header-area .main-nav .nav li:first-child {
@@ -335,6 +339,7 @@ Header Style
 .header-area .main-nav .nav li {
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
   background-color: #ffffff;
 }
 
