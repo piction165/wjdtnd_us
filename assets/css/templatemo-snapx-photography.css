@@ -587,6 +587,9 @@ Header Style
         width: 140px !important; /* 로고 크기 줄이기 */
         height: auto !important;
     }
+   .portfolio-container {
+    grid-template-columns: repeat(2, 1fr); /* 화면이 작아지면 2개씩 배치 */
+  }
 }
 
 @media (max-width: 768px) {
@@ -594,6 +597,9 @@ Header Style
         width: 120px !important; /* 더 작은 화면에서 크기 조정 */
         height: auto !important;
     }
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr); /* 모바일에서는 1개씩 배치 */
+  }
 }
 
 @media (max-width: 767px) {
