@@ -2615,7 +2615,7 @@ body {
   }
 
   .main-banner h2 {
-    font-size: 36px; /* 기존 64px에서 줄임 */
+    font-size: 30px; /* 기존 64px에서 줄임 */
     line-height: 46px; /* 기존 74px에서 줄임 */
     text-align: center;
   }
