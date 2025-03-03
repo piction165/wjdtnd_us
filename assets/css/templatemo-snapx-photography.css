@@ -602,12 +602,16 @@ Header Style
         width: 120px !important; /* 더 작은 화면에서 크기 조정 */
         height: auto !important;
     }
+}
+
+@media (max-width: 768px) {
   .portfolio-container {
-    grid-template-columns: repeat(2, 1fr); /* 모바일에서는 1개씩 배치 */
-    display: grid;
-     gap: 15px; /* 간격 추가 */
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* 한 줄에 두 개 */
+    gap: 15px !important; /* 간격 추가 */
   }
 }
+
 
 @media (max-width: 767px) {
   .header-area .main-nav .nav {
