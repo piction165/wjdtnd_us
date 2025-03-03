@@ -603,7 +603,9 @@ Header Style
         height: auto !important;
     }
   .portfolio-container {
-    grid-template-columns: repeat(1, 1fr); /* 모바일에서는 1개씩 배치 */
+    grid-template-columns: repeat(2, 1fr); /* 모바일에서는 1개씩 배치 */
+    display: grid;
+     gap: 15px; /* 간격 추가 */
   }
 }
 
@@ -1548,9 +1550,9 @@ page heading
 .page-heading h2 {
   color: #fff;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 64px;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 74px;
+  line-height: 40px;
 }
 
 .page-heading h2.space-need {
