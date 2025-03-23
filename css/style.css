@@ -656,6 +656,19 @@ pre code {
   100% { transform: translateX(100%); }
 }
 
+.slider-item {
+    position: relative;
+    height: 100vh;  /* Set the height to full viewport height */
+    background-size: cover;  /* Ensure background images cover the section */
+    background-position: center center;  /* Center the background image */
+    overflow: hidden;  /* Prevent content from overflowing */
+}
+
+.home-slider {
+    overflow: hidden;  /* Make sure the slider doesn't cause overflow */
+}
+
+
 .slider-wrapper {
   overflow: hidden;
   width: 100%;
