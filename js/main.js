@@ -178,25 +178,4 @@ $(document).ready(function(){
     });
   });
 
-<script>
-  var videoSrc;
-  var videoModal = document.getElementById('videoModal');
-  var videoIframe = document.getElementById('video');
-
-  // 버튼 클릭 시 videoSrc 저장
-  document.querySelector('.btn-play').addEventListener('click', function () {
-    videoSrc = this.getAttribute("data-src");
-  });
-
-  // 모달이 보일 때 iframe에 src 삽입
-  videoModal.addEventListener('shown.bs.modal', function () {
-    videoIframe.src = videoSrc + "?autoplay=1&modestbranding=1&showinfo=0";
-  });
-
-  // 모달이 닫힐 때 영상 멈춤
-  videoModal.addEventListener('hide.bs.modal', function () {
-    videoIframe.src = "";
-  });
-</script>
-
   
