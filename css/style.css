@@ -805,6 +805,22 @@
     margin-top: 5px;
     color: #333;
   }
+
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column; /* 세로 정렬로 변경 */
+    }
+  
+    .contact-image {
+      margin-right: 0;
+      margin-bottom: 20px; /* 이미지와 폼 사이 여백 추가 */
+    }
+  
+    .contact-form {
+      width: 100%;
+    }
+  }
+  
   
 
 
