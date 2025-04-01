@@ -241,23 +241,22 @@
     width: 30px;
 }
 
-/* 전체 컨테이너 */
+/* 연락처 섹션 레이아웃 */
 .contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #fff;
+  gap: 30px;
+}
   
-  /* 이미지 섹션 */
-  .contact-image {
-    flex: 1;
-    margin-right: 30px;
-  }
+/* 이미지 영역 */
+.contact-image {
+  flex: 1;
+  min-width: 300px;
+}
   
   .contact-image img {
     width: 100%;
@@ -265,11 +264,12 @@
     border-radius: 0px;
   }
   
-  /* 폼 섹션 */
-  .contact-form {
-    flex: 1;
-    max-width: 500px;
-    width: 100%;
+/* 폼 영역 */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
 
   /* 모바일 대응 */
 @media (max-width: 768px) {
