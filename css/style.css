@@ -270,8 +270,42 @@
   min-width: 300px;
   max-width: 600px;
 }
+.contact-form form {
+  width: 100%;
+}
 
-  /* 모바일 대응 */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #696969;
+}
+
+/* 모바일 반응형 */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -279,15 +313,12 @@
     padding: 20px;
   }
 
-  .contact-image {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
+  .contact-image,
   .contact-form {
     width: 100%;
+    max-width: 100%;
   }
-}}
+}
   
   /* 입력 필드 */
   .contact-form input,
