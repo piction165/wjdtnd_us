@@ -244,11 +244,13 @@
 /* 전체 컨테이너 */
 .contact-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
   }
   
   /* 이미지 섹션 */
@@ -267,7 +269,25 @@
   .contact-form {
     flex: 1;
     max-width: 500px;
+    width: 100%;
+
+  /* 모바일 대응 */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
+
+  .contact-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}}
   
   /* 입력 필드 */
   .contact-form input,
