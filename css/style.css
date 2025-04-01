@@ -86,6 +86,12 @@
     transition: .5s;
 }
 
+.navbar-brand h1 {
+  font-size: 1.5rem;  /* 원하는 크기로 조절 (예: 24px ≈ 1.5rem) */
+  font-weight: 700;   /* 기존 두께 유지 */
+}
+
+
 .navbar .navbar-nav .nav-link {
     padding: 20px 15px;
     color: var(--dark);
