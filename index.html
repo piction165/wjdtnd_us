@@ -392,7 +392,7 @@
         </div>
       
 <div class="contact-form">
-  <form action="https://formspree.io/f/mgvalgde" method="POST">
+  <form id="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
     <label for="name">Your Name</label>
     <input type="text" id="name" name="name" placeholder="Your Name" required>
 
@@ -407,7 +407,13 @@
 
     <button type="submit">Send Message</button>
   </form>
+
+  <!-- 알림 메시지 -->
+  <div id="success-message" style="display:none; margin-top: 20px; color: green; font-weight: bold;">
+    전송이 완료되었습니다! 감사합니다.
+  </div>
 </div>
+
 
       
 
