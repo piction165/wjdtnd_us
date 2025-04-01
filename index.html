@@ -391,24 +391,24 @@
           <img src="img/bg1.JPG" alt="Contact Image">
         </div>
       
-        <div class="contact-form">
-          <form>
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
-      
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
-      
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject">
-      
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your Message"></textarea>
-      
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
+<div class="contact-form">
+  <form action="https://formspree.io/f/mgvalgde" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
       
 
 
