@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 기본 설정 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f1f1f1;
+  margin: 0;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  background: #333;
+  overflow: hidden;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  float: left;
+}
+.navbar ul li a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 헤더 (블로그 제목) */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+
+/* 메인 컨텐츠 영역 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* 왼쪽 컬럼 */
+.leftcolumn {
+  flex: 75%;
+  padding: 20px;
+}
+
+/* 오른쪽 컬럼 */
+.rightcolumn {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* 카드 스타일 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Featured Post 강조 스타일 */
+.featured-post {
+  border: 2px solid #333;
+}
+
+/* 가짜 이미지(플레이스홀더) */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* 개별 포스트 스타일 */
+.post {
+  margin-bottom: 20px;
+}
+
+/* Footer 스타일 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 반응형 레이아웃 */
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  .leftcolumn, .rightcolumn {
+    flex: 100%;
+    padding: 0;
+  }
+}
