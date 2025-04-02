@@ -177,3 +177,16 @@ body {
     padding: 0;
   }
 }
+
+.popular-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
